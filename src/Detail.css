@@ -1,0 +1,60 @@
+@import "tailwindcss";
+body {
+    @apply bg-neutral-950 text-white font-sans;
+}
+
+/*Banner */
+.banner {
+    @apply relative h-[520px] bg-cover bg-center;
+}
+
+.banner-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent;
+}
+
+.banner-content {
+    @apply absolute bottom-0 p-10 max-w-5xl;
+}
+
+.banner-title {
+    @apply text-5xl font-bold mb-3;
+}
+
+.banner-description {
+    @apply text-gray-300 mb-2;
+}
+
+.banner-rating {
+    @apply text-yellow-400 font-semibold;
+}
+
+.overview-text {
+    @apply max-w-4xl leading-relaxed text-gray-300;
+}
+
+/* Sections */
+.section {
+    @apply mb-16;
+}
+
+.section-title {
+    @apply text-3xl font-semibold mb-5;
+}
+
+/* Trailer */
+.trailer-frame {
+    @apply w-full aspect-video rounded-xl overflow-hidden shadow-2xl;
+}
+
+.trailer-frame iframe {
+    @apply w-full h-full border-0;
+}
+
+/*Horizontal Rows */
+.horizontal-row {
+    @apply flex gap-6 overflow-x-auto pb-4;
+}
+
+.horizontal-row::-webkit-scrollbar {
+    display: none;
+}

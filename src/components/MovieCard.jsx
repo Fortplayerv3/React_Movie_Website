@@ -1,9 +1,12 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
+const MovieCard = ({ movie }) => {
+    const navigate = useNavigate();
+    const { title, vote_average, poster_path, release_date, original_language, id } = movie;
 
-const MovieCard = ({movie : {title, vote_average, poster_path, release_date, original_language}}) => {
     return (
 
-        <div className="movie-card">
+        <div className="movie-card" onClick={() => navigate(`/movie/${id}`)}>
             <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` :
             '/No-Poster.png'} alt={title} />
 
@@ -12,7 +15,7 @@ const MovieCard = ({movie : {title, vote_average, poster_path, release_date, ori
 
             <div className="content">
                 <div className="rating">
-                    <img src="Star.svg" alt="Star Icon"/>
+                    <img src="/Star.svg" alt="Star Icon"/>
                     <p>{vote_average ? vote_average.toFixed(1) : 'N/A'}</p>
                 </div>
 

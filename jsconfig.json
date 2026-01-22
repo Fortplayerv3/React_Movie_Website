@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": false,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
