@@ -20,7 +20,7 @@ This is a React-based movie database application that allows users to search for
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/React_Movie_Website
+    git clone https://github.com/Fortplayerv3/React_Movie_Website
     ```
 
 2. Install the dependencies:
